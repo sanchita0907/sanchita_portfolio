@@ -1,0 +1,956 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Sanchita Santosh Jadhav — Aspiring Web Developer, Aspiring AI Engineer, and Data Science Enthusiast.">
+
+    <title>Sanchita Santosh Jadhav | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .footer-socials {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            flex-wrap: wrap;
+            margin: 12px 0;
+        }
+
+        .footer-socials a {
+            text-decoration: none;
+        }
+
+        .hackathon-container {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+            gap: 36px;
+            align-items: start;
+            margin-top: 30px;
+        }
+
+        .hackathon-image img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .hackathon-content h3 {
+            margin: 0 0 18px;
+        }
+
+        .hackathon-content h4 {
+            margin: 20px 0 8px;
+        }
+
+        .hackathon-content p,
+        .hackathon-content li {
+            line-height: 1.75;
+        }
+
+        .hackathon-content ul {
+            padding-left: 22px;
+        }
+
+        .hackathon-disclaimer {
+            margin-top: 20px;
+            padding: 14px;
+            border-left: 3px solid #ffbd35;
+            background: rgba(255, 189, 53, .07);
+        }
+
+        @media (max-width: 700px) {
+            .hackathon-container {
+                grid-template-columns: 1fr;
+                gap: 22px;
+            }
+
+            .hackathon-image img {
+                height: 230px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            Sanchita<span>.</span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="navLinks">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#hackathon">Hackathon</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">HELLO!</p>
+
+                <h1>
+                    I'm <span>Sanchita<br>Jadhav</span>
+                </h1>
+
+                <h2>
+                    <span class="role-label">Aspiring</span>
+                    <span id="typedRole">Web Developer</span>
+                </h2>
+
+                <p class="hero-description">
+                    I'm a second-year B.Tech student specializing in Artificial Intelligence
+                    and Data Science, interested in web development, AI engineering
+                    and building useful technology projects.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn btn-primary">
+                        MY WORKS
+                    </a>
+
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdfb4-CvskdTnv40DQmvq0UyTR6K7U8zJQUQ9R-1XH0a6TdhQ/viewform?pli=1"
+                        class="btn btn-outline"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        CONTACT ME
+                    </a>
+
+                </div>
+
+                <div class="social-links">
+
+                    <a href="#projects">
+                        My Projects ↗
+                    </a>
+
+                    <a
+                        href="https://github.com/sanchita0907"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        GitHub ↗
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/sanchita-jadhav-9085a6383/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        LinkedIn ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <img
+                    src="assets/profile.jpg"
+                    alt="Sanchita Santosh Jadhav"
+                    class="profile-photo">
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT ME SECTION -->
+        <section class="about-section" id="about">
+
+            <div class="about-container">
+
+                <!-- LEFT SIDE -->
+                <div class="about-left">
+
+                    <div class="about-person">
+
+                        <img
+                            src="assets/about.jpg"
+                            alt="Sanchita Santosh Jadhav"
+                            class="about-photo">
+
+                        <div class="person-details">
+
+                            <h3>Sanchita Santosh Jadhav</h3>
+
+                            <p>
+                                Aspiring Web Developer, Aspiring AI Engineer
+                            </p>
+
+                            <p>Data Science Enthusiast</p>
+
+                            <p>Satara, Maharashtra, India</p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SKILLS -->
+                    <div class="about-skills">
+
+                        <h3>My Skills</h3>
+
+                        <div class="skill-item">
+
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>80%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <span style="width: 80%"></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-item">
+
+                            <div class="skill-info">
+                                <span>HTML & CSS</span>
+                                <span>75%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <span style="width: 75%"></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-item">
+
+                            <div class="skill-info">
+                                <span>SQL</span>
+                                <span>75%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <span style="width: 75%"></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-item">
+
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>70%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <span style="width: 70%"></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-item">
+
+                            <div class="skill-info">
+                                <span>Excel</span>
+                                <span>80%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <span style="width: 80%"></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-item">
+
+                            <div class="skill-info">
+                                <span>AI/ML</span>
+                                <span>35%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <span style="width: 35%"></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-item">
+
+                            <div class="skill-info">
+                                <span>Git/GitHub</span>
+                                <span>75%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <span style="width: 75%"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT SIDE -->
+                <div class="about-right">
+
+                    <p class="about-label">
+                        GET TO KNOW ME
+                    </p>
+
+                    <h2>
+                        About <span>Me</span>
+                    </h2>
+
+                    <h3 class="about-greeting">
+                        Hi, I'm Sanchita!
+                    </h3>
+
+                    <p class="about-intro">
+                        I am a second-year B.Tech student in Artificial Intelligence
+                        and Data Science from Satara, Maharashtra. I am an aspiring
+                        web developer and AI engineer with a strong interest in data
+                        science. I enjoy learning new technologies, building practical
+                        projects, solving problems and collaborating with others.
+                        I aim to strengthen my technical skills and create useful,
+                        real-world solutions.
+                    </p>
+
+                    <h3 class="profile-heading">
+                        Profile
+                    </h3>
+
+                    <div class="profile-details">
+
+                        <p>
+                            <strong>Domain:</strong>
+                            Web Development, AI Engineering & Data Science
+                        </p>
+
+                        <p>
+                            <strong>Education:</strong>
+                            2nd Year B.Tech — Artificial Intelligence & Data Science
+                        </p>
+
+                        <p>
+                            <strong>Location:</strong>
+                            Satara, Maharashtra, India
+                        </p>
+
+                        <p>
+                            <strong>Languages:</strong>
+                            English, Marathi, Hindi
+                        </p>
+
+                        <p>
+                            <strong>Soft Skills:</strong>
+                            Communication, Leadership, Problem Solving, Teamwork
+                        </p>
+
+                        <p>
+                            <strong>Technical Skills:</strong>
+                            Python, HTML & CSS, SQL, JavaScript, Excel, AI/ML, Git/GitHub
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- END ABOUT ME SECTION -->
+
+
+        <!-- EXPERIENCE SECTION -->
+        <section
+            class="content-section alternate experience-section"
+            id="experience">
+
+            <div class="experience-heading">
+
+                <p class="eyebrow">
+                    MY PROFESSIONAL JOURNEY
+                </p>
+
+                <h2>
+                    Internship <span>Experience</span>
+                </h2>
+
+                <p class="experience-subtitle">
+                    Learning, building and growing through real-world experience.
+                </p>
+
+            </div>
+
+
+            <div class="experience-timeline">
+
+
+                <!-- CODEALPHA -->
+                <article class="info-card experience-card">
+
+                    <div class="experience-top">
+
+                        <span class="card-label">
+                            VIRTUAL INTERNSHIP
+                        </span>
+
+                        <span class="experience-duration">
+                            1 Aug 2026 - 30 Aug 2026
+                        </span>
+
+                    </div>
+
+                    <h3>Frontend Developer Intern</h3>
+
+                    <h4>CodeAlpha</h4>
+
+                    <p>
+                        Completed frontend development tasks using HTML, CSS and
+                        JavaScript, transforming designs into functional web
+                        experiences. Strengthened responsive design, coding and
+                        practical development skills.
+                    </p>
+
+                    <div class="experience-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Responsive Design</span>
+                    </div>
+
+                    <p class="experience-achievement">
+                        ★ Completion Certificate & Letter of Recommendation
+                    </p>
+
+                </article>
+
+
+                <!-- GOVERNMENT COLLEGE OF ENGINEERING -->
+                <article class="info-card experience-card">
+
+                    <div class="experience-top">
+
+                        <span class="card-label">
+                            TECHNICAL INTERNSHIP
+                        </span>
+
+                        <span class="experience-duration">
+                            July · 15 Days
+                        </span>
+
+                    </div>
+
+                    <h3>Technical Intern</h3>
+
+                    <h4>
+                        Government College of Engineering, Karad —
+                        Centre of Excellence
+                    </h4>
+
+                    <p>
+                        Technical internship focused on Frontend Development,
+                        Python and JavaScript.
+                    </p>
+
+                    <div class="experience-tags">
+                        <span>Frontend Development</span>
+                        <span>Python</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </article>
+
+
+                <!-- IPC ELECTROSOFT -->
+                <article class="info-card experience-card">
+
+                    <div class="experience-top">
+
+                        <span class="card-label">
+                            VIRTUAL TRAINING INTERNSHIP
+                        </span>
+
+                        <span class="experience-duration">
+                            March · 7 Days
+                        </span>
+
+                    </div>
+
+                    <h3>Virtual Internship</h3>
+
+                    <h4>IPC Electrosoft</h4>
+
+                    <p>
+                        Gained practical knowledge and hands-on experience
+                        in Python.
+                    </p>
+
+                    <div class="experience-tags">
+                        <span>Python</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+        <!-- END EXPERIENCE SECTION -->
+
+
+        <!-- PROJECTS SECTION -->
+        <section class="content-section" id="projects">
+
+            <p class="eyebrow">
+                WHAT I'VE BEEN BUILDING
+            </p>
+
+            <h2>
+                Featured <span>Projects</span>
+            </h2>
+
+
+            <div class="project-grid">
+
+
+                <!-- PROJECT 1 -->
+                <article class="info-card">
+
+                    <img
+                        src="assets/hand-gesture.jpg"
+                        alt="Screenshot Using Hand Gesture"
+                        class="project-image">
+
+                    <p class="card-label">
+                        COMPUTER VISION
+                    </p>
+
+                    <h3>
+                        Screenshot Using Hand Gesture
+                    </h3>
+
+                    <p>
+                        A project that allows the user to capture a screenshot
+                        using a hand gesture.
+                    </p>
+
+                    <p class="tech">
+                        Hand Gesture · Screenshot Capture
+                    </p>
+
+                </article>
+
+
+                <!-- PROJECT 2 -->
+                <article class="info-card">
+
+                    <img
+                        src="assets/smartcalc.jpg"
+                        alt="Scientific Calculator"
+                        class="project-image">
+
+                    <p class="card-label">
+                        WEB DEVELOPMENT
+                    </p>
+
+                    <h3>
+                        Scientific Calculator
+                    </h3>
+
+                    <p>
+                        A functional web-based calculator for basic and
+                        scientific calculations.
+                    </p>
+
+                    <p class="tech">
+                        HTML · CSS · JavaScript
+                    </p>
+
+                    <a
+                        href="https://sanchita0907.github.io/basic_calculator/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        View Live Project ↗
+                    </a>
+
+                </article>
+
+
+                <!-- PROJECT 3 -->
+                <article class="info-card">
+
+                    <img
+                        src="assets/sanchea.jpg"
+                        alt="SANCHEA website"
+                        class="project-image">
+
+                    <p class="card-label">
+                        WEB DEVELOPMENT
+                    </p>
+
+                    <h3>SANCHEA</h3>
+
+                    <p>
+                        A web project named SANCHEA.
+                    </p>
+
+                    <p class="tech">
+                        Web Development
+                    </p>
+
+                    <a
+                        href="https://sanchita0907.github.io/sanchea/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        View Live Project ↗
+                    </a>
+
+                </article>
+
+            </div>
+
+
+            <a href="#contact" class="btn btn-outline">
+                GET IN TOUCH ↗
+            </a>
+
+        </section>
+        <!-- END PROJECTS SECTION -->
+
+
+        <!-- HEATCARE AI HACKATHON SECTION -->
+        <section
+            class="content-section alternate hackathon-section"
+            id="hackathon">
+
+            <p class="eyebrow">
+                HACKATHON PROJECT · HC-02
+            </p>
+
+            <h2>
+                HeatCare <span>AI</span>
+            </h2>
+
+            <p class="experience-subtitle">
+                Predicting Hospital Demand During Extreme Heat
+            </p>
+
+
+            <div class="hackathon-container">
+
+                <div class="hackathon-image">
+
+                    <img
+                        src="assets/heatcare.jpg"
+                        alt="HeatCare AI hospital demand dashboard"
+                        class="project-image">
+
+                </div>
+
+
+                <div class="hackathon-content">
+
+                    <h3>
+                        Supporting smarter hospital preparedness
+                        during extreme heat.
+                    </h3>
+
+
+                    <h4>Problem</h4>
+
+                    <p>
+                        Extreme heat can increase heat-related illnesses
+                        and emergency visits, placing pressure on hospital
+                        beds, medical staff and essential resources.
+                        Hospitals need ways to anticipate potential demand
+                        and prepare ahead of time.
+                    </p>
+
+
+                    <h4>Our Solution</h4>
+
+                    <p>
+                        HeatCare AI is a healthcare preparedness dashboard
+                        that brings together available environmental
+                        information, hospital data and experimental demand
+                        forecasts. It helps users review expected demand,
+                        monitor capacity and identify potential pressure points.
+                    </p>
+
+
+                    <h4>Key Features</h4>
+
+                    <ul>
+
+                        <li>
+                            Dashboard overview of heat and healthcare indicators
+                        </li>
+
+                        <li>
+                            Experimental short-term hospital demand forecasting
+                        </li>
+
+                        <li>
+                            Hospital bed and resource capacity monitoring
+                        </li>
+
+                        <li>
+                            Risk indicators and demand-pressure alerts
+                        </li>
+
+                        <li>
+                            Weather context and interactive satellite
+                            thermal-anomaly map
+                        </li>
+
+                        <li>
+                            Charts and visual analytics
+                        </li>
+
+                    </ul>
+
+
+                    <h4>Technology Stack</h4>
+
+                    <p>
+                        React · Vite · CSS · Python · FastAPI · Pandas ·
+                        NumPy · Scikit-learn · Recharts · React Leaflet
+                    </p>
+
+
+                    <p class="hackathon-disclaimer">
+                        Disclaimer: HeatCare AI is an educational prototype.
+                        Demonstration data and experimental forecasts are
+                        not validated for real-world clinical or hospital
+                        operational decisions. NASA FIRMS satellite
+                        thermal anomalies are not direct measurements
+                        of ambient temperature.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- END HEATCARE AI HACKATHON SECTION -->
+
+
+        <!-- CV SECTION -->
+        <section>
+
+            <a
+                href="cv/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cv-button">
+                Open CV
+            </a>
+
+        </section>
+        <!-- END CV SECTION -->
+
+
+        <!-- CONTACT SECTION -->
+        <section
+            class="content-section alternate contact-section"
+            id="contact">
+
+            <div class="contact-heading">
+
+                <p class="eyebrow">
+                    LET'S TALK
+                </p>
+
+                <h2>
+                    Contact <span>Me</span>
+                </h2>
+
+                <p>
+                    Have a question, collaboration idea, or opportunity?
+                    I'd love to hear from you!
+                </p>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+
+                <!-- LOCATION -->
+                <div class="contact-card">
+
+                    <div class="contact-icon">⌖</div>
+
+                    <h3>MY LOCATION</h3>
+
+                    <p>
+                        Satara, Maharashtra, India
+                    </p>
+
+                </div>
+
+
+                <!-- EMAIL -->
+                <div class="contact-card">
+
+                    <div class="contact-icon">✉</div>
+
+                    <h3>EMAIL ADDRESS</h3>
+
+                    <a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=jadhavsanchita051@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        jadhavsanchita051@gmail.com
+                    </a>
+
+                </div>
+
+
+                <!-- PHONE -->
+                <div class="contact-card">
+
+                    <div class="contact-icon">☎</div>
+
+                    <h3>PHONE NUMBER</h3>
+
+                    <a href="tel:8010803269">
+                        8010803269
+                    </a>
+
+                </div>
+
+
+                <!-- GITHUB -->
+                <div class="contact-card">
+
+                    <div class="contact-icon">⌘</div>
+
+                    <h3>GITHUB PROFILE</h3>
+
+                    <a
+                        href="https://github.com/sanchita0907"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Visit GitHub ↗
+                    </a>
+
+                </div>
+
+
+                <!-- LINKEDIN -->
+                <div class="contact-card">
+
+                    <div class="contact-icon">in</div>
+
+                    <h3>LINKEDIN PROFILE</h3>
+
+                    <a
+                        href="https://www.linkedin.com/in/sanchita-jadhav-9085a6383/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Connect on LinkedIn ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT BUTTONS -->
+            <div class="contact-question">
+
+                <h3>Have a Question?</h3>
+
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdfb4-CvskdTnv40DQmvq0UyTR6K7U8zJQUQ9R-1XH0a6TdhQ/viewform?pli=1"
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    CONTACT ME ↗
+                </a>
+
+                <a
+                    href="tel:8010803269"
+                    class="btn btn-outline">
+                    CALL ME ↗
+                </a>
+
+            </div>
+
+        </section>
+        <!-- END CONTACT SECTION -->
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            Designed and built with curiosity by
+            <span>Sanchita Santosh Jadhav</span>
+        </p>
+
+        <div class="footer-socials">
+
+            <a
+                href="https://github.com/sanchita0907"
+                target="_blank"
+                rel="noopener noreferrer">
+                GitHub
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/sanchita-jadhav-9085a6383/"
+                target="_blank"
+                rel="noopener noreferrer">
+                LinkedIn
+            </a>
+
+        </div>
+
+        <a href="#home">
+            Back to top ↑
+        </a>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>

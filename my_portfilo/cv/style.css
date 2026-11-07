@@ -1,0 +1,372 @@
+
+/* =========================================
+   SANCHITA SANTOSH JADHAV - RESUME CSS
+   ========================================= */
+
+/* GLOBAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --text: #1e293b;
+    --muted: #64748b;
+    --background: #f1f5f9;
+    --white: #ffffff;
+    --border: #e2e8f0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.65;
+    padding: 35px 15px;
+}
+
+/* MAIN RESUME CONTAINER */
+.resume {
+    max-width: 950px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 55px 65px;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding-bottom: 28px;
+    border-bottom: 3px solid var(--primary);
+    margin-bottom: 30px;
+}
+
+.eyebrow {
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 35px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.headline {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--muted);
+}
+
+.contact {
+    min-width: 220px;
+    text-align: right;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.contact p {
+    margin-bottom: 5px;
+}
+
+.contact a {
+    color: var(--primary);
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+/* GENERAL SECTIONS */
+section {
+    margin-bottom: 27px;
+}
+
+section h2 {
+    font-size: 17px;
+    color: var(--primary);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    padding-bottom: 8px;
+    margin-bottom: 13px;
+    border-bottom: 1px solid var(--border);
+}
+
+section > p {
+    font-size: 13.5px;
+    color: #475569;
+    text-align: justify;
+}
+
+/* SKILLS */
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9px 25px;
+}
+
+.skills p {
+    font-size: 13px;
+    color: #475569;
+    padding: 9px 12px;
+    background: #f8fafc;
+    border-left: 3px solid var(--primary);
+    border-radius: 4px;
+}
+
+.skills strong {
+    color: #1e293b;
+}
+
+/* ENTRIES */
+.entry {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 2px solid #dbeafe;
+}
+
+.entry:last-child {
+    margin-bottom: 0;
+}
+
+.entry-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 5px;
+}
+
+.entry h3 {
+    font-size: 14px;
+    font-weight: 750;
+    color: #1e293b;
+}
+
+.date {
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.subheading {
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.entry p {
+    font-size: 13px;
+    color: #475569;
+    margin-top: 6px;
+}
+
+.entry ul {
+    padding-left: 19px;
+    margin-top: 8px;
+}
+
+.entry li {
+    font-size: 13px;
+    color: #475569;
+    margin-bottom: 5px;
+    padding-left: 3px;
+}
+
+/* LINKS */
+a {
+    transition: color 0.2s ease;
+}
+
+.entry a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.entry a:hover,
+.contact a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 35px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-size: 11px;
+    color: var(--muted);
+}
+
+footer span {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* TABLET RESPONSIVENESS */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    .resume {
+        padding: 35px 28px;
+    }
+
+    .header {
+        gap: 20px;
+    }
+
+    .header h1 {
+        font-size: 29px;
+    }
+
+    .contact {
+        min-width: 180px;
+    }
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 560px) {
+    body {
+        padding: 10px;
+    }
+
+    .resume {
+        padding: 25px 19px;
+        border-radius: 8px;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .header h1 {
+        font-size: 27px;
+    }
+
+    .headline {
+        font-size: 13px;
+    }
+
+    .contact {
+        text-align: left;
+        min-width: auto;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .entry-top {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .date {
+        white-space: normal;
+    }
+
+    section h2 {
+        font-size: 15px;
+    }
+}
+
+/* PRINT / SAVE AS PDF */
+@media print {
+    @page {
+        size: A4;
+        margin: 13mm;
+    }
+
+    body {
+        background: white;
+        padding: 0;
+        color: #1e293b;
+        font-size: 11px;
+    }
+
+    .resume {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .header {
+        break-inside: avoid;
+    }
+
+    section {
+        break-inside: avoid;
+    }
+
+    a {
+        color: #1e293b;
+        text-decoration: none;
+    }
+
+    .entry {
+        break-inside: avoid;
+    }
+}
+/* DOWNLOAD CV BUTTON */
+.cv-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+}
+
+.print-button {
+    background: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.print-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* HIDE BUTTON WHEN PRINTING */
+@media print {
+    .cv-actions {
+        display: none !important;
+    }
+
+    body {
+        background: #ffffff !important;
+    }
+
+    .resume {
+        box-shadow: none !important;
+    }
+}
